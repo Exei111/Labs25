@@ -3,8 +3,8 @@
 #include <iostream>
 
 namespace {
-const int kFieldWidth = 11;
-const int kFieldWidthForN = 6;
+const int kFieldWidth = 15;
+const int kFieldWidthForN = 8;
 
 const int kFive = 5;
 const double kStep = 0.2;
@@ -22,23 +22,23 @@ const double kYForTenSummands = 10;
 
 void Task1() {
     std::cout << std::endl
-              << "Задача 1 - Сумма натуральных чисел на отрезке от 1 до n, которые делятся на 5 и не делятся на m (m < n)\n"
+              << "Задача 1 - Сумма натуральных чисел на отрезке от 1 до n включительно, которые делятся на 5 и не делятся на m (m < n)\n"
               << std::endl;
     int m = 0;
     int n = 0;
     int sum = 0;
-    std::cout << "Введите n и затеим m (m<n): ";
+    std::cout << "Введите n и затем m (m<n): ";
     std::cin >> n >> m;
 
-    if (m >= n) {
-        std::cout << "Ошибка, m не может быть больше или равен n\n";
+    if (m >= n || m < 0 || n < 0) {
+        std::cout << "Ошибка, m не может быть больше или равен n, m и n должны быть больше нуля\n";
         return;
     } else if (m == 0) {
         std::cout << "Ошибка, m не может быть равен 0\n";
         return;
     }
 
-    for (int i = 0; i <= n; i += kFive) {
+    for (int i = kFive; i <= n; i += kFive) {
         if (i % m != 0) {
             sum += i;
         }
@@ -91,7 +91,7 @@ void Task3() {
         }
 
         Y = (1 - x * x / 2) * std::cos(x) - x / 2 * std::sin(x);
-        std::cout << std::setw(kFieldWidth) << std::right << std::fixed << std::setprecision(kPrecision) << x;
+        std::cout << std::setw(kFieldWidth) << std::right << std::fixed << std::setprecision(1) << x;
         std::cout << std::setw(kFieldWidth) << std::right << std::fixed << std::setprecision(kPrecision) << Y;
         std::cout << std::setw(kFieldWidth) << std::right << std::fixed << std::setprecision(kPrecision) << S;
         std::cout << std::setw(kFieldWidthForN) << std::right << std::fixed << n << std::endl;
@@ -117,15 +117,18 @@ void Task4() {
 
     for (int i = 1; i <= N; ++i) {
         y = sqrt(2 * i + y);
+
         if (i == kYForThreeSummands || i == kYForFiveSummands || i == kYForTenSummands) {
-            std::cout << "y при " << i << " слагаемых = " << std::setw(kFieldWidth) << std::left << std::fixed << std::setprecision(kPrecision) << y
-                      << std::endl;
+            if (N == i) {
+                std::cout << "итоговый y = " << std::setw(kFieldWidth) << std::left << std::fixed << std::setprecision(kPrecision) << y << std::endl;
+            } else {
+                std::cout << "y при " << i << " слагаемых = " << std::setw(kFieldWidth) << std::left << std::fixed << std::setprecision(kPrecision)
+                          << y << std::endl;
+            }
         }
     }
 
-    if (N == kYForThreeSummands || N == kYForFiveSummands || N == kYForTenSummands) {
-        std::cout << "это итоговый y" << std::endl;
-    } else {
+    if (N != kYForThreeSummands && N != kYForFiveSummands && N != kYForTenSummands) {
         std::cout << "итоговый y = " << y << std::endl;
     }
 }
