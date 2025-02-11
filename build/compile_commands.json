@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/exeiqq/Shniperov-CS-Labs-2024/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/lab1.dir/main.cpp.o -c /home/exeiqq/Shniperov-CS-Labs-2024/main.cpp",
+  "file": "/home/exeiqq/Shniperov-CS-Labs-2024/main.cpp",
+  "output": "CMakeFiles/lab1.dir/main.cpp.o"
+},
+{
+  "directory": "/home/exeiqq/Shniperov-CS-Labs-2024/build/mymath",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/mymath.dir/mymath.cpp.o -c /home/exeiqq/Shniperov-CS-Labs-2024/mymath/mymath.cpp",
+  "file": "/home/exeiqq/Shniperov-CS-Labs-2024/mymath/mymath.cpp",
+  "output": "mymath/CMakeFiles/mymath.dir/mymath.cpp.o"
+}
+]
