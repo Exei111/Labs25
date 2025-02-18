@@ -1,5 +1,6 @@
-CMakeFiles/lab1.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/14/iostream \
+mymathnew/CMakeFiles/mymathnew.dir/mymathnew.cpp.o: \
+ /home/exeiqq/Labs25/mymathnew/mymathnew.cpp /usr/include/stdc-predef.h \
+ /home/exeiqq/Labs25/mymathnew/mymathnew.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -127,5 +128,4 @@ CMakeFiles/lab1.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /home/exeiqq/Labs25/mymath/mymath.h \
- /home/exeiqq/Labs25/mymathnew/mymathnew.h
+ /usr/include/c++/14/bits/istream.tcc

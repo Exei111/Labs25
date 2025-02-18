@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/exeiqq/Shniperov-CS-Labs-2024
+CMAKE_SOURCE_DIR = /home/exeiqq/Labs25
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/exeiqq/Shniperov-CS-Labs-2024/build
+CMAKE_BINARY_DIR = /home/exeiqq/Labs25/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Shniperov-CS-Labs-2024/build/CMakeFiles /home/exeiqq/Shniperov-CS-Labs-2024/build/mymath//CMakeFiles/progress.marks
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Shniperov-CS-Labs-2024/build/CMakeFiles 0
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles /home/exeiqq/Labs25/build/mymath//CMakeFiles/progress.marks
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/clean
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/preinstall
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/preinstall
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 mymath/CMakeFiles/mymath.dir/rule:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/CMakeFiles/mymath.dir/rule
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/CMakeFiles/mymath.dir/rule
 .PHONY : mymath/CMakeFiles/mymath.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ mymath: mymath/CMakeFiles/mymath.dir/rule
 
 # fast build rule for target.
 mymath/fast:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/build
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/build
 .PHONY : mymath/fast
 
 mymath.o: mymath.cpp.o
@@ -135,7 +135,7 @@ mymath.o: mymath.cpp.o
 
 # target to build an object file
 mymath.cpp.o:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/mymath.cpp.o
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/mymath.cpp.o
 .PHONY : mymath.cpp.o
 
 mymath.i: mymath.cpp.i
@@ -143,7 +143,7 @@ mymath.i: mymath.cpp.i
 
 # target to preprocess a source file
 mymath.cpp.i:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/mymath.cpp.i
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/mymath.cpp.i
 .PHONY : mymath.cpp.i
 
 mymath.s: mymath.cpp.s
@@ -151,7 +151,7 @@ mymath.s: mymath.cpp.s
 
 # target to generate assembly for a file
 mymath.cpp.s:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/mymath.cpp.s
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/mymath.cpp.s
 .PHONY : mymath.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/exeiqq/Shniperov-CS-Labs-2024/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

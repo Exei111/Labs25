@@ -7,11 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/exeiqq/Shniperov-CS-Labs-2024/CMakeLists.txt"
+  "/home/exeiqq/Labs25/CMakeLists.txt"
   "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeSystem.cmake"
-  "/home/exeiqq/Shniperov-CS-Labs-2024/mymath/CMakeLists.txt"
+  "/home/exeiqq/Labs25/mymath/CMakeLists.txt"
+  "/home/exeiqq/Labs25/mymathnew/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -41,11 +42,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "mymathnew/CMakeFiles/CMakeDirectoryInformation.cmake"
   "mymath/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lab1.dir/DependInfo.cmake"
+  "mymathnew/CMakeFiles/mymathnew.dir/DependInfo.cmake"
   "mymath/CMakeFiles/mymath.dir/DependInfo.cmake"
   )

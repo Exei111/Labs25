@@ -1,4 +1,4 @@
-# Install script for directory: /home/exeiqq/Labs25/mymath
+# Install script for directory: /home/exeiqq/Labs25/mymathnew
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

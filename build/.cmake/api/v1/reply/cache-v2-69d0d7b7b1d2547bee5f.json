@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/exeiqq/Shniperov-CS-Labs-2024/build"
+			"value" : "/home/exeiqq/Labs25/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/exeiqq/Shniperov-CS-Labs-2024/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/exeiqq/Labs25/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -615,7 +615,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/exeiqq/Shniperov-CS-Labs-2024"
+			"value" : "/home/exeiqq/Labs25"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1179,7 +1179,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/exeiqq/Shniperov-CS-Labs-2024/build"
+			"value" : "/home/exeiqq/Labs25/build"
 		},
 		{
 			"name" : "lab1_IS_TOP_LEVEL",
@@ -1203,7 +1203,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/exeiqq/Shniperov-CS-Labs-2024"
+			"value" : "/home/exeiqq/Labs25"
 		},
 		{
 			"name" : "mymath_BINARY_DIR",
@@ -1215,7 +1215,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/exeiqq/Shniperov-CS-Labs-2024/build/mymath"
+			"value" : "/home/exeiqq/Labs25/build/mymath"
 		},
 		{
 			"name" : "mymath_IS_TOP_LEVEL",
@@ -1239,7 +1239,43 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/exeiqq/Shniperov-CS-Labs-2024/mymath"
+			"value" : "/home/exeiqq/Labs25/mymath"
+		},
+		{
+			"name" : "mymathnew_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/exeiqq/Labs25/build/mymathnew"
+		},
+		{
+			"name" : "mymathnew_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "mymathnew_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/exeiqq/Labs25/mymathnew"
 		}
 	],
 	"kind" : "cache",

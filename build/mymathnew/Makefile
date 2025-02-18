@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles /home/exeiqq/Labs25/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles /home/exeiqq/Labs25/build/mymathnew//CMakeFiles/progress.marks
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymathnew/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymathnew/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,81 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymathnew/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymathnew/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lab1
+# Convenience name for target.
+mymathnew/CMakeFiles/mymathnew.dir/rule:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymathnew/CMakeFiles/mymathnew.dir/rule
+.PHONY : mymathnew/CMakeFiles/mymathnew.dir/rule
 
-# Build rule for target.
-lab1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab1
-.PHONY : lab1
-
-# fast build rule for target.
-lab1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
-.PHONY : lab1/fast
-
-#=============================================================================
-# Target rules for targets named mymathnew
-
-# Build rule for target.
-mymathnew: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymathnew
+# Convenience name for target.
+mymathnew: mymathnew/CMakeFiles/mymathnew.dir/rule
 .PHONY : mymathnew
 
 # fast build rule for target.
 mymathnew/fast:
-	$(MAKE) $(MAKESILENT) -f mymathnew/CMakeFiles/mymathnew.dir/build.make mymathnew/CMakeFiles/mymathnew.dir/build
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f mymathnew/CMakeFiles/mymathnew.dir/build.make mymathnew/CMakeFiles/mymathnew.dir/build
 .PHONY : mymathnew/fast
 
-#=============================================================================
-# Target rules for targets named mymath
-
-# Build rule for target.
-mymath: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath
-.PHONY : mymath
-
-# fast build rule for target.
-mymath/fast:
-	$(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/build
-.PHONY : mymath/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
+mymathnew.o: mymathnew.cpp.o
+.PHONY : mymathnew.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.o
-.PHONY : main.cpp.o
+mymathnew.cpp.o:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f mymathnew/CMakeFiles/mymathnew.dir/build.make mymathnew/CMakeFiles/mymathnew.dir/mymathnew.cpp.o
+.PHONY : mymathnew.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+mymathnew.i: mymathnew.cpp.i
+.PHONY : mymathnew.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.i
-.PHONY : main.cpp.i
+mymathnew.cpp.i:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f mymathnew/CMakeFiles/mymathnew.dir/build.make mymathnew/CMakeFiles/mymathnew.dir/mymathnew.cpp.i
+.PHONY : mymathnew.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+mymathnew.s: mymathnew.cpp.s
+.PHONY : mymathnew.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.s
-.PHONY : main.cpp.s
+mymathnew.cpp.s:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f mymathnew/CMakeFiles/mymathnew.dir/build.make mymathnew/CMakeFiles/mymathnew.dir/mymathnew.cpp.s
+.PHONY : mymathnew.cpp.s
 
 # Help Target
 help:
@@ -187,12 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lab1"
-	@echo "... mymath"
 	@echo "... mymathnew"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mymathnew.o"
+	@echo "... mymathnew.i"
+	@echo "... mymathnew.s"
 .PHONY : help
 
 
@@ -204,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

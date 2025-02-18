@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 16,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 21,
 				"parent" : 0
 			}
 		]
@@ -64,6 +64,10 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "mymathnew::@152f609aba21009fafac"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "mymath::@606efe13a5ded610172a"
 		}
 	],
@@ -83,6 +87,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "mymath/libmymath.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "mymathnew/libmymathnew.a",
 				"role" : "libraries"
 			}
 		],

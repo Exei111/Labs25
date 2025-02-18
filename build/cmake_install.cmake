@@ -1,4 +1,4 @@
-# Install script for directory: /home/exeiqq/Shniperov-CS-Labs-2024
+# Install script for directory: /home/exeiqq/Labs25
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/exeiqq/Shniperov-CS-Labs-2024/build/mymath/cmake_install.cmake")
+  include("/home/exeiqq/Labs25/build/mymathnew/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/exeiqq/Labs25/build/mymath/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -62,6 +67,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/exeiqq/Shniperov-CS-Labs-2024/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/exeiqq/Labs25/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

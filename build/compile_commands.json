@@ -1,14 +1,20 @@
 [
 {
-  "directory": "/home/exeiqq/Shniperov-CS-Labs-2024/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/lab1.dir/main.cpp.o -c /home/exeiqq/Shniperov-CS-Labs-2024/main.cpp",
-  "file": "/home/exeiqq/Shniperov-CS-Labs-2024/main.cpp",
+  "directory": "/home/exeiqq/Labs25/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/lab1.dir/main.cpp.o -c /home/exeiqq/Labs25/main.cpp",
+  "file": "/home/exeiqq/Labs25/main.cpp",
   "output": "CMakeFiles/lab1.dir/main.cpp.o"
 },
 {
-  "directory": "/home/exeiqq/Shniperov-CS-Labs-2024/build/mymath",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/mymath.dir/mymath.cpp.o -c /home/exeiqq/Shniperov-CS-Labs-2024/mymath/mymath.cpp",
-  "file": "/home/exeiqq/Shniperov-CS-Labs-2024/mymath/mymath.cpp",
+  "directory": "/home/exeiqq/Labs25/build/mymathnew",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/mymathnew.dir/mymathnew.cpp.o -c /home/exeiqq/Labs25/mymathnew/mymathnew.cpp",
+  "file": "/home/exeiqq/Labs25/mymathnew/mymathnew.cpp",
+  "output": "mymathnew/CMakeFiles/mymathnew.dir/mymathnew.cpp.o"
+},
+{
+  "directory": "/home/exeiqq/Labs25/build/mymath",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/mymath.dir/mymath.cpp.o -c /home/exeiqq/Labs25/mymath/mymath.cpp",
+  "file": "/home/exeiqq/Labs25/mymath/mymath.cpp",
   "output": "mymath/CMakeFiles/mymath.dir/mymath.cpp.o"
 }
 ]
