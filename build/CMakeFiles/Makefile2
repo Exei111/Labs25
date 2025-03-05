@@ -63,130 +63,130 @@ CMAKE_BINARY_DIR = /home/exeiqq/Labs25/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lab1.dir/all
-all: mymathnew/all
-all: mymath/all
+all: CMakeFiles/lab2.dir/all
+all: planets/all
+all: products/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: mymathnew/preinstall
-preinstall: mymath/preinstall
+preinstall: planets/preinstall
+preinstall: products/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lab1.dir/clean
-clean: mymathnew/clean
-clean: mymath/clean
+clean: CMakeFiles/lab2.dir/clean
+clean: planets/clean
+clean: products/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory mymath
+# Directory level rules for directory planets
 
 # Recursive "all" directory target.
-mymath/all: mymath/CMakeFiles/mymath.dir/all
-.PHONY : mymath/all
+planets/all: planets/CMakeFiles/planets.dir/all
+.PHONY : planets/all
 
 # Recursive "preinstall" directory target.
-mymath/preinstall:
-.PHONY : mymath/preinstall
+planets/preinstall:
+.PHONY : planets/preinstall
 
 # Recursive "clean" directory target.
-mymath/clean: mymath/CMakeFiles/mymath.dir/clean
-.PHONY : mymath/clean
+planets/clean: planets/CMakeFiles/planets.dir/clean
+.PHONY : planets/clean
 
 #=============================================================================
-# Directory level rules for directory mymathnew
+# Directory level rules for directory products
 
 # Recursive "all" directory target.
-mymathnew/all: mymathnew/CMakeFiles/mymathnew.dir/all
-.PHONY : mymathnew/all
+products/all: products/CMakeFiles/products.dir/all
+.PHONY : products/all
 
 # Recursive "preinstall" directory target.
-mymathnew/preinstall:
-.PHONY : mymathnew/preinstall
+products/preinstall:
+.PHONY : products/preinstall
 
 # Recursive "clean" directory target.
-mymathnew/clean: mymathnew/CMakeFiles/mymathnew.dir/clean
-.PHONY : mymathnew/clean
+products/clean: products/CMakeFiles/products.dir/clean
+.PHONY : products/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lab1.dir
+# Target rules for target CMakeFiles/lab2.dir
 
 # All Build rule for target.
-CMakeFiles/lab1.dir/all: mymathnew/CMakeFiles/mymathnew.dir/all
-CMakeFiles/lab1.dir/all: mymath/CMakeFiles/mymath.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=1,2 "Built target lab1"
-.PHONY : CMakeFiles/lab1.dir/all
+CMakeFiles/lab2.dir/all: planets/CMakeFiles/planets.dir/all
+CMakeFiles/lab2.dir/all: products/CMakeFiles/products.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=1,2 "Built target lab2"
+.PHONY : CMakeFiles/lab2.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lab1.dir/rule: cmake_check_build_system
+CMakeFiles/lab2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab1.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
-.PHONY : CMakeFiles/lab1.dir/rule
+.PHONY : CMakeFiles/lab2.dir/rule
 
 # Convenience name for target.
-lab1: CMakeFiles/lab1.dir/rule
-.PHONY : lab1
+lab2: CMakeFiles/lab2.dir/rule
+.PHONY : lab2
 
 # clean rule for target.
-CMakeFiles/lab1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/clean
-.PHONY : CMakeFiles/lab1.dir/clean
+CMakeFiles/lab2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/clean
+.PHONY : CMakeFiles/lab2.dir/clean
 
 #=============================================================================
-# Target rules for target mymathnew/CMakeFiles/mymathnew.dir
+# Target rules for target planets/CMakeFiles/planets.dir
 
 # All Build rule for target.
-mymathnew/CMakeFiles/mymathnew.dir/all:
-	$(MAKE) $(MAKESILENT) -f mymathnew/CMakeFiles/mymathnew.dir/build.make mymathnew/CMakeFiles/mymathnew.dir/depend
-	$(MAKE) $(MAKESILENT) -f mymathnew/CMakeFiles/mymathnew.dir/build.make mymathnew/CMakeFiles/mymathnew.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=5,6 "Built target mymathnew"
-.PHONY : mymathnew/CMakeFiles/mymathnew.dir/all
+planets/CMakeFiles/planets.dir/all:
+	$(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/depend
+	$(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=3,4 "Built target planets"
+.PHONY : planets/CMakeFiles/planets.dir/all
 
 # Build rule for subdir invocation for target.
-mymathnew/CMakeFiles/mymathnew.dir/rule: cmake_check_build_system
+planets/CMakeFiles/planets.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymathnew/CMakeFiles/mymathnew.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planets/CMakeFiles/planets.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
-.PHONY : mymathnew/CMakeFiles/mymathnew.dir/rule
+.PHONY : planets/CMakeFiles/planets.dir/rule
 
 # Convenience name for target.
-mymathnew: mymathnew/CMakeFiles/mymathnew.dir/rule
-.PHONY : mymathnew
+planets: planets/CMakeFiles/planets.dir/rule
+.PHONY : planets
 
 # clean rule for target.
-mymathnew/CMakeFiles/mymathnew.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mymathnew/CMakeFiles/mymathnew.dir/build.make mymathnew/CMakeFiles/mymathnew.dir/clean
-.PHONY : mymathnew/CMakeFiles/mymathnew.dir/clean
+planets/CMakeFiles/planets.dir/clean:
+	$(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/clean
+.PHONY : planets/CMakeFiles/planets.dir/clean
 
 #=============================================================================
-# Target rules for target mymath/CMakeFiles/mymath.dir
+# Target rules for target products/CMakeFiles/products.dir
 
 # All Build rule for target.
-mymath/CMakeFiles/mymath.dir/all:
-	$(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/depend
-	$(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=3,4 "Built target mymath"
-.PHONY : mymath/CMakeFiles/mymath.dir/all
+products/CMakeFiles/products.dir/all:
+	$(MAKE) $(MAKESILENT) -f products/CMakeFiles/products.dir/build.make products/CMakeFiles/products.dir/depend
+	$(MAKE) $(MAKESILENT) -f products/CMakeFiles/products.dir/build.make products/CMakeFiles/products.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=5,6 "Built target products"
+.PHONY : products/CMakeFiles/products.dir/all
 
 # Build rule for subdir invocation for target.
-mymath/CMakeFiles/mymath.dir/rule: cmake_check_build_system
+products/CMakeFiles/products.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath/CMakeFiles/mymath.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 products/CMakeFiles/products.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
-.PHONY : mymath/CMakeFiles/mymath.dir/rule
+.PHONY : products/CMakeFiles/products.dir/rule
 
 # Convenience name for target.
-mymath: mymath/CMakeFiles/mymath.dir/rule
-.PHONY : mymath
+products: products/CMakeFiles/products.dir/rule
+.PHONY : products
 
 # clean rule for target.
-mymath/CMakeFiles/mymath.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mymath/CMakeFiles/mymath.dir/build.make mymath/CMakeFiles/mymath.dir/clean
-.PHONY : mymath/CMakeFiles/mymath.dir/clean
+products/CMakeFiles/products.dir/clean:
+	$(MAKE) $(MAKESILENT) -f products/CMakeFiles/products.dir/build.make products/CMakeFiles/products.dir/clean
+.PHONY : products/CMakeFiles/products.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

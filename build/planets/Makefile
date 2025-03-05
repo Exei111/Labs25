@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles /home/exeiqq/Labs25/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles /home/exeiqq/Labs25/build/planets//CMakeFiles/progress.marks
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planets/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planets/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,81 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planets/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planets/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lab2
+# Convenience name for target.
+planets/CMakeFiles/planets.dir/rule:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planets/CMakeFiles/planets.dir/rule
+.PHONY : planets/CMakeFiles/planets.dir/rule
 
-# Build rule for target.
-lab2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab2
-.PHONY : lab2
-
-# fast build rule for target.
-lab2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/build
-.PHONY : lab2/fast
-
-#=============================================================================
-# Target rules for targets named planets
-
-# Build rule for target.
-planets: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planets
+# Convenience name for target.
+planets: planets/CMakeFiles/planets.dir/rule
 .PHONY : planets
 
 # fast build rule for target.
 planets/fast:
-	$(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/build
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/build
 .PHONY : planets/fast
 
-#=============================================================================
-# Target rules for targets named products
-
-# Build rule for target.
-products: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 products
-.PHONY : products
-
-# fast build rule for target.
-products/fast:
-	$(MAKE) $(MAKESILENT) -f products/CMakeFiles/products.dir/build.make products/CMakeFiles/products.dir/build
-.PHONY : products/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
+planets.o: planets.cpp.o
+.PHONY : planets.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/main.cpp.o
-.PHONY : main.cpp.o
+planets.cpp.o:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/planets.cpp.o
+.PHONY : planets.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+planets.i: planets.cpp.i
+.PHONY : planets.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/main.cpp.i
-.PHONY : main.cpp.i
+planets.cpp.i:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/planets.cpp.i
+.PHONY : planets.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+planets.s: planets.cpp.s
+.PHONY : planets.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/main.cpp.s
-.PHONY : main.cpp.s
+planets.cpp.s:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/planets.cpp.s
+.PHONY : planets.cpp.s
 
 # Help Target
 help:
@@ -187,12 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lab2"
 	@echo "... planets"
-	@echo "... products"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... planets.o"
+	@echo "... planets.i"
+	@echo "... planets.s"
 .PHONY : help
 
 
@@ -204,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

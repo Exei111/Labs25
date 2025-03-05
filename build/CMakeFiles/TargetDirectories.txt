@@ -1,9 +1,9 @@
-/home/exeiqq/Labs25/build/CMakeFiles/lab1.dir
+/home/exeiqq/Labs25/build/CMakeFiles/lab2.dir
 /home/exeiqq/Labs25/build/CMakeFiles/edit_cache.dir
 /home/exeiqq/Labs25/build/CMakeFiles/rebuild_cache.dir
-/home/exeiqq/Labs25/build/mymathnew/CMakeFiles/mymathnew.dir
-/home/exeiqq/Labs25/build/mymathnew/CMakeFiles/edit_cache.dir
-/home/exeiqq/Labs25/build/mymathnew/CMakeFiles/rebuild_cache.dir
-/home/exeiqq/Labs25/build/mymath/CMakeFiles/mymath.dir
-/home/exeiqq/Labs25/build/mymath/CMakeFiles/edit_cache.dir
-/home/exeiqq/Labs25/build/mymath/CMakeFiles/rebuild_cache.dir
+/home/exeiqq/Labs25/build/planets/CMakeFiles/planets.dir
+/home/exeiqq/Labs25/build/planets/CMakeFiles/edit_cache.dir
+/home/exeiqq/Labs25/build/planets/CMakeFiles/rebuild_cache.dir
+/home/exeiqq/Labs25/build/products/CMakeFiles/products.dir
+/home/exeiqq/Labs25/build/products/CMakeFiles/edit_cache.dir
+/home/exeiqq/Labs25/build/products/CMakeFiles/rebuild_cache.dir

@@ -11,8 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeSystem.cmake"
-  "/home/exeiqq/Labs25/mymath/CMakeLists.txt"
-  "/home/exeiqq/Labs25/mymathnew/CMakeLists.txt"
+  "/home/exeiqq/Labs25/database.txt"
+  "/home/exeiqq/Labs25/database2.txt"
+  "/home/exeiqq/Labs25/planets/CMakeLists.txt"
+  "/home/exeiqq/Labs25/products/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -41,14 +43,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "database.txt"
+  "database2.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "mymathnew/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "mymath/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "planets/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "products/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lab1.dir/DependInfo.cmake"
-  "mymathnew/CMakeFiles/mymathnew.dir/DependInfo.cmake"
-  "mymath/CMakeFiles/mymath.dir/DependInfo.cmake"
+  "CMakeFiles/lab2.dir/DependInfo.cmake"
+  "planets/CMakeFiles/planets.dir/DependInfo.cmake"
+  "products/CMakeFiles/products.dir/DependInfo.cmake"
   )
