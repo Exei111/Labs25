@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles /home/exeiqq/Labs25/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles /home/exeiqq/Labs25/build/fraction//CMakeFiles/progress.marks
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fraction/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fraction/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fraction/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fraction/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lab3
+# Convenience name for target.
+fraction/CMakeFiles/fraction.dir/rule:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fraction/CMakeFiles/fraction.dir/rule
+.PHONY : fraction/CMakeFiles/fraction.dir/rule
 
-# Build rule for target.
-lab3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab3
-.PHONY : lab3
-
-# fast build rule for target.
-lab3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
-.PHONY : lab3/fast
-
-#=============================================================================
-# Target rules for targets named fraction
-
-# Build rule for target.
-fraction: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fraction
+# Convenience name for target.
+fraction: fraction/CMakeFiles/fraction.dir/rule
 .PHONY : fraction
 
 # fast build rule for target.
 fraction/fast:
-	$(MAKE) $(MAKESILENT) -f fraction/CMakeFiles/fraction.dir/build.make fraction/CMakeFiles/fraction.dir/build
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f fraction/CMakeFiles/fraction.dir/build.make fraction/CMakeFiles/fraction.dir/build
 .PHONY : fraction/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+fraction.o: fraction.cpp.o
+.PHONY : fraction.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/main.cpp.o
-.PHONY : main.cpp.o
+fraction.cpp.o:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f fraction/CMakeFiles/fraction.dir/build.make fraction/CMakeFiles/fraction.dir/fraction.cpp.o
+.PHONY : fraction.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+fraction.i: fraction.cpp.i
+.PHONY : fraction.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/main.cpp.i
-.PHONY : main.cpp.i
+fraction.cpp.i:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f fraction/CMakeFiles/fraction.dir/build.make fraction/CMakeFiles/fraction.dir/fraction.cpp.i
+.PHONY : fraction.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+fraction.s: fraction.cpp.s
+.PHONY : fraction.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/main.cpp.s
-.PHONY : main.cpp.s
+fraction.cpp.s:
+	cd /home/exeiqq/Labs25/build && $(MAKE) $(MAKESILENT) -f fraction/CMakeFiles/fraction.dir/build.make fraction/CMakeFiles/fraction.dir/fraction.cpp.s
+.PHONY : fraction.cpp.s
 
 # Help Target
 help:
@@ -175,10 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... fraction"
-	@echo "... lab3"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... fraction.o"
+	@echo "... fraction.i"
+	@echo "... fraction.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/exeiqq/Labs25/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -147,7 +147,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=lab2
+CMAKE_PROJECT_NAME:STATIC=lab3
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -215,31 +215,22 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-lab2_BINARY_DIR:STATIC=/home/exeiqq/Labs25/build
+fraction_BINARY_DIR:STATIC=/home/exeiqq/Labs25/build/fraction
 
 //Value Computed by CMake
-lab2_IS_TOP_LEVEL:STATIC=ON
+fraction_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-lab2_SOURCE_DIR:STATIC=/home/exeiqq/Labs25
+fraction_SOURCE_DIR:STATIC=/home/exeiqq/Labs25/fraction
 
 //Value Computed by CMake
-planets_BINARY_DIR:STATIC=/home/exeiqq/Labs25/build/planets
+lab3_BINARY_DIR:STATIC=/home/exeiqq/Labs25/build
 
 //Value Computed by CMake
-planets_IS_TOP_LEVEL:STATIC=OFF
+lab3_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-planets_SOURCE_DIR:STATIC=/home/exeiqq/Labs25/planets
-
-//Value Computed by CMake
-products_BINARY_DIR:STATIC=/home/exeiqq/Labs25/build/products
-
-//Value Computed by CMake
-products_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-products_SOURCE_DIR:STATIC=/home/exeiqq/Labs25/products
+lab3_SOURCE_DIR:STATIC=/home/exeiqq/Labs25
 
 
 ########################
@@ -346,7 +337,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,20 +1,14 @@
 [
 {
   "directory": "/home/exeiqq/Labs25/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/lab2.dir/main.cpp.o -c /home/exeiqq/Labs25/main.cpp",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/lab3.dir/main.cpp.o -c /home/exeiqq/Labs25/main.cpp",
   "file": "/home/exeiqq/Labs25/main.cpp",
-  "output": "CMakeFiles/lab2.dir/main.cpp.o"
+  "output": "CMakeFiles/lab3.dir/main.cpp.o"
 },
 {
-  "directory": "/home/exeiqq/Labs25/build/planets",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/planets.dir/planets.cpp.o -c /home/exeiqq/Labs25/planets/planets.cpp",
-  "file": "/home/exeiqq/Labs25/planets/planets.cpp",
-  "output": "planets/CMakeFiles/planets.dir/planets.cpp.o"
-},
-{
-  "directory": "/home/exeiqq/Labs25/build/products",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/products.dir/products.cpp.o -c /home/exeiqq/Labs25/products/products.cpp",
-  "file": "/home/exeiqq/Labs25/products/products.cpp",
-  "output": "products/CMakeFiles/products.dir/products.cpp.o"
+  "directory": "/home/exeiqq/Labs25/build/fraction",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fraction.dir/fraction.cpp.o -c /home/exeiqq/Labs25/fraction/fraction.cpp",
+  "file": "/home/exeiqq/Labs25/fraction/fraction.cpp",
+  "output": "fraction/CMakeFiles/fraction.dir/fraction.cpp.o"
 }
 ]
