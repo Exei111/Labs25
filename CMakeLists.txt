@@ -1,22 +1,12 @@
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.17)
 
+project(lab4)
 
-set(project "lab3")
-project(${project})
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(CMAKE_CXX_STANDARD 17)
+add_executable(lab4 main.cpp)
 
-set(${project}_SOURCES
-        main.cpp)
+target_sources(lab4 PRIVATE MyStack.h)
 
-add_subdirectory(fraction)
-
-set(${project}_SOURCE_LIST
-        ${${project}_SOURCES})
-
-add_executable(${project}
-        ${${project}_SOURCE_LIST})
-
-
-
-target_link_libraries(${project} fraction)
+target_include_directories(lab4 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})

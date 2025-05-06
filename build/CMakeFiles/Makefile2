@@ -63,85 +63,42 @@ CMAKE_BINARY_DIR = /home/exeiqq/Labs25/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lab3.dir/all
-all: fraction/all
+all: CMakeFiles/lab4.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: fraction/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lab3.dir/clean
-clean: fraction/clean
+clean: CMakeFiles/lab4.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory fraction
-
-# Recursive "all" directory target.
-fraction/all: fraction/CMakeFiles/fraction.dir/all
-.PHONY : fraction/all
-
-# Recursive "preinstall" directory target.
-fraction/preinstall:
-.PHONY : fraction/preinstall
-
-# Recursive "clean" directory target.
-fraction/clean: fraction/CMakeFiles/fraction.dir/clean
-.PHONY : fraction/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lab3.dir
+# Target rules for target CMakeFiles/lab4.dir
 
 # All Build rule for target.
-CMakeFiles/lab3.dir/all: fraction/CMakeFiles/fraction.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=3,4 "Built target lab3"
-.PHONY : CMakeFiles/lab3.dir/all
+CMakeFiles/lab4.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=1,2 "Built target lab4"
+.PHONY : CMakeFiles/lab4.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lab3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
-.PHONY : CMakeFiles/lab3.dir/rule
-
-# Convenience name for target.
-lab3: CMakeFiles/lab3.dir/rule
-.PHONY : lab3
-
-# clean rule for target.
-CMakeFiles/lab3.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/clean
-.PHONY : CMakeFiles/lab3.dir/clean
-
-#=============================================================================
-# Target rules for target fraction/CMakeFiles/fraction.dir
-
-# All Build rule for target.
-fraction/CMakeFiles/fraction.dir/all:
-	$(MAKE) $(MAKESILENT) -f fraction/CMakeFiles/fraction.dir/build.make fraction/CMakeFiles/fraction.dir/depend
-	$(MAKE) $(MAKESILENT) -f fraction/CMakeFiles/fraction.dir/build.make fraction/CMakeFiles/fraction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=1,2 "Built target fraction"
-.PHONY : fraction/CMakeFiles/fraction.dir/all
-
-# Build rule for subdir invocation for target.
-fraction/CMakeFiles/fraction.dir/rule: cmake_check_build_system
+CMakeFiles/lab4.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fraction/CMakeFiles/fraction.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
-.PHONY : fraction/CMakeFiles/fraction.dir/rule
+.PHONY : CMakeFiles/lab4.dir/rule
 
 # Convenience name for target.
-fraction: fraction/CMakeFiles/fraction.dir/rule
-.PHONY : fraction
+lab4: CMakeFiles/lab4.dir/rule
+.PHONY : lab4
 
 # clean rule for target.
-fraction/CMakeFiles/fraction.dir/clean:
-	$(MAKE) $(MAKESILENT) -f fraction/CMakeFiles/fraction.dir/build.make fraction/CMakeFiles/fraction.dir/clean
-.PHONY : fraction/CMakeFiles/fraction.dir/clean
+CMakeFiles/lab4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/clean
+.PHONY : CMakeFiles/lab4.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

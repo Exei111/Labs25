@@ -8,10 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/exeiqq/Labs25/CMakeLists.txt"
-  "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
-  "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.30.5/CMakeSystem.cmake"
-  "/home/exeiqq/Labs25/fraction/CMakeLists.txt"
+  "CMakeFiles/3.30.8/CMakeCCompiler.cmake"
+  "CMakeFiles/3.30.8/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.30.8/CMakeSystem.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -41,11 +40,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "fraction/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lab3.dir/DependInfo.cmake"
-  "fraction/CMakeFiles/fraction.dir/DependInfo.cmake"
+  "CMakeFiles/lab4.dir/DependInfo.cmake"
   )
