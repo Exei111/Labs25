@@ -1,4 +1,4 @@
-CMakeFiles/lab4.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
+CMakeFiles/lab_5.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
@@ -31,15 +31,7 @@ CMakeFiles/lab4.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
  /usr/include/c++/14/new /usr/include/c++/14/bits/move.h \
  /usr/include/c++/14/type_traits \
  /usr/include/c++/14/bits/nested_exception.h \
- /usr/include/c++/14/bits/char_traits.h /usr/include/c++/14/compare \
- /usr/include/c++/14/concepts /usr/include/c++/14/bits/stl_construct.h \
- /usr/include/c++/14/bits/stl_iterator_base_types.h \
- /usr/include/c++/14/bits/iterator_concepts.h \
- /usr/include/c++/14/bits/ptr_traits.h \
- /usr/include/c++/14/bits/ranges_cmp.h \
- /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/14/bits/concept_check.h \
- /usr/include/c++/14/debug/assertions.h \
+ /usr/include/c++/14/bits/char_traits.h \
  /usr/include/c++/14/bits/localefwd.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
  /usr/include/c++/14/clocale /usr/include/locale.h \
@@ -76,8 +68,13 @@ CMakeFiles/lab4.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
  /usr/include/c++/14/bits/cpp_type_traits.h \
  /usr/include/c++/14/bits/ostream_insert.h \
  /usr/include/c++/14/bits/cxxabi_forced.h \
+ /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/14/bits/concept_check.h \
+ /usr/include/c++/14/debug/assertions.h \
+ /usr/include/c++/14/bits/stl_iterator_base_types.h \
  /usr/include/c++/14/bits/stl_iterator.h \
  /usr/include/c++/14/ext/type_traits.h \
+ /usr/include/c++/14/bits/ptr_traits.h \
  /usr/include/c++/14/bits/stl_function.h \
  /usr/include/c++/14/backward/binders.h \
  /usr/include/c++/14/ext/numeric_traits.h \
@@ -85,15 +82,15 @@ CMakeFiles/lab4.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
  /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/bits/utility.h \
  /usr/include/c++/14/debug/debug.h \
  /usr/include/c++/14/bits/predefined_ops.h /usr/include/c++/14/bit \
- /usr/include/c++/14/bits/refwrap.h /usr/include/c++/14/bits/invoke.h \
+ /usr/include/c++/14/concepts /usr/include/c++/14/bits/refwrap.h \
+ /usr/include/c++/14/bits/invoke.h \
  /usr/include/c++/14/bits/range_access.h \
  /usr/include/c++/14/initializer_list \
  /usr/include/c++/14/bits/basic_string.h \
  /usr/include/c++/14/ext/alloc_traits.h \
- /usr/include/c++/14/bits/alloc_traits.h /usr/include/c++/14/string_view \
+ /usr/include/c++/14/bits/alloc_traits.h \
+ /usr/include/c++/14/bits/stl_construct.h /usr/include/c++/14/string_view \
  /usr/include/c++/14/bits/functional_hash.h \
- /usr/include/c++/14/bits/ranges_base.h \
- /usr/include/c++/14/bits/max_size_type.h /usr/include/c++/14/numbers \
  /usr/include/c++/14/bits/string_view.tcc \
  /usr/include/c++/14/ext/string_conversions.h /usr/include/c++/14/cstdlib \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
@@ -116,7 +113,6 @@ CMakeFiles/lab4.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
  /usr/include/c++/14/bits/uses_allocator.h \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /usr/include/c++/14/bits/ranges_util.h \
  /usr/include/c++/14/bits/locale_classes.tcc \
  /usr/include/c++/14/system_error \
  /usr/include/c++/14/x86_64-redhat-linux/bits/error_constants.h \
@@ -131,4 +127,6 @@ CMakeFiles/lab4.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /home/exeiqq/Labs25/MyStack.h
+ /usr/include/c++/14/bits/istream.tcc /home/exeiqq/Labs25/MySet.h \
+ /home/exeiqq/Labs25/MyVector.h /usr/include/c++/14/cstring \
+ /usr/include/string.h /usr/include/strings.h

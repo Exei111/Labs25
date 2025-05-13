@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/exeiqq/Labs25/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lab4.dir/all
+all: CMakeFiles/lab_5.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lab4.dir/clean
+clean: CMakeFiles/lab_5.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lab4.dir
+# Target rules for target CMakeFiles/lab_5.dir
 
 # All Build rule for target.
-CMakeFiles/lab4.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=1,2 "Built target lab4"
-.PHONY : CMakeFiles/lab4.dir/all
+CMakeFiles/lab_5.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_5.dir/build.make CMakeFiles/lab_5.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_5.dir/build.make CMakeFiles/lab_5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=1,2 "Built target lab_5"
+.PHONY : CMakeFiles/lab_5.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lab4.dir/rule: cmake_check_build_system
+CMakeFiles/lab_5.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab4.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab_5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
-.PHONY : CMakeFiles/lab4.dir/rule
+.PHONY : CMakeFiles/lab_5.dir/rule
 
 # Convenience name for target.
-lab4: CMakeFiles/lab4.dir/rule
-.PHONY : lab4
+lab_5: CMakeFiles/lab_5.dir/rule
+.PHONY : lab_5
 
 # clean rule for target.
-CMakeFiles/lab4.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/clean
-.PHONY : CMakeFiles/lab4.dir/clean
+CMakeFiles/lab_5.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab_5.dir/build.make CMakeFiles/lab_5.dir/clean
+.PHONY : CMakeFiles/lab_5.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
