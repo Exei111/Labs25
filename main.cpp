@@ -2,8 +2,7 @@
 #include "MySet.h"
 
 int main() {
-    setlocale(LC_ALL, "Russian");
-
+    
     MyVector<const char*> v("Hello!");
     v.add_element("Привет!");
     v.add_element("Привет!");
