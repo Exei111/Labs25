@@ -1,3 +1,4 @@
-/home/exeiqq/Labs25/build/CMakeFiles/lab5.dir
+/home/exeiqq/Labs25/build/CMakeFiles/PolynomialLib.dir
+/home/exeiqq/Labs25/build/CMakeFiles/lab6.dir
 /home/exeiqq/Labs25/build/CMakeFiles/edit_cache.dir
 /home/exeiqq/Labs25/build/CMakeFiles/rebuild_cache.dir

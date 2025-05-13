@@ -1,8 +1,14 @@
 [
 {
   "directory": "/home/exeiqq/Labs25/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/lab5.dir/main.cpp.o -c /home/exeiqq/Labs25/main.cpp",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PolynomialLib.dir/lib/PolynomialLib.cpp.o -c /home/exeiqq/Labs25/lib/PolynomialLib.cpp",
+  "file": "/home/exeiqq/Labs25/lib/PolynomialLib.cpp",
+  "output": "CMakeFiles/PolynomialLib.dir/lib/PolynomialLib.cpp.o"
+},
+{
+  "directory": "/home/exeiqq/Labs25/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/lab6.dir/main.cpp.o -c /home/exeiqq/Labs25/main.cpp",
   "file": "/home/exeiqq/Labs25/main.cpp",
-  "output": "CMakeFiles/lab5.dir/main.cpp.o"
+  "output": "CMakeFiles/lab6.dir/main.cpp.o"
 }
 ]
