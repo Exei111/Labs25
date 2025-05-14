@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lab_5"
+			"path" : "lab5"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +10,9 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"target_include_directories",
+			"target_sources"
 		],
 		"files" : 
 		[
@@ -24,7 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -36,6 +50,13 @@
 			[
 				{
 					"fragment" : "-g -std=gnu++17"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/exeiqq/Labs25"
 				}
 			],
 			"language" : "CXX",
@@ -53,7 +74,7 @@
 			]
 		}
 	],
-	"id" : "lab_5::@6890427a1f51a3e7e1df",
+	"id" : "lab5::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +90,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "lab_5",
-	"nameOnDisk" : "lab_5",
+	"name" : "lab5",
+	"nameOnDisk" : "lab5",
 	"paths" : 
 	{
 		"build" : ".",
@@ -103,12 +124,12 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 1,
+			"backtrace" : 3,
 			"path" : "MyVector.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 1,
+			"backtrace" : 3,
 			"path" : "MySet.h",
 			"sourceGroupIndex" : 1
 		}

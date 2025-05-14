@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.10"
+						"string" : "3.23"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "MySetLab",
+					"name" : "lab5",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "lab_5::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab_5-Debug-286047ba2c339268c1af.json",
-					"name" : "lab_5",
+					"id" : "lab5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab5-Debug-5d46a0f693b9e38c31eb.json",
+					"name" : "lab5",
 					"projectIndex" : 0
 				}
 			]

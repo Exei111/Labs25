@@ -1,3 +1,3 @@
-/home/exeiqq/Labs25/build/CMakeFiles/lab_5.dir
+/home/exeiqq/Labs25/build/CMakeFiles/lab5.dir
 /home/exeiqq/Labs25/build/CMakeFiles/edit_cache.dir
 /home/exeiqq/Labs25/build/CMakeFiles/rebuild_cache.dir

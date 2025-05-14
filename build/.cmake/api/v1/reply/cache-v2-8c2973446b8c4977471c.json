@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -283,10 +283,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -859,7 +859,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "MySetLab"
+			"value" : "lab5"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1158,7 +1158,19 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "MySetLab_BINARY_DIR",
+			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
+			"name" : "lab5_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1170,7 +1182,7 @@
 			"value" : "/home/exeiqq/Labs25/build"
 		},
 		{
-			"name" : "MySetLab_IS_TOP_LEVEL",
+			"name" : "lab5_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1182,7 +1194,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "MySetLab_SOURCE_DIR",
+			"name" : "lab5_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1192,18 +1204,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/exeiqq/Labs25"
-		},
-		{
-			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "linker supports push/pop state"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "TRUE"
 		}
 	],
 	"kind" : "cache",
