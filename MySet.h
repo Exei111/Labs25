@@ -13,9 +13,7 @@ template <typename T>
 class MySet : public MyVector<T> {
 public:
     MySet(size_t initial_size = 1);
-    MySet(const MyVector<T>& other);
-    MySet(const T& initial_element);  // Added constructor for single element
-    ~MySet() = default;
+    MySet(const MySet& other);
 
     void add_element(const T& element);
     void delete_element(const T& element);
@@ -37,30 +35,15 @@ public:
 
 template <typename T>
 MySet<T>::MySet(size_t initial_size) : MyVector<T>(initial_size) {}
-
+    
 template <typename T>
-MySet<T>::MySet(const MyVector<T>& other) : MyVector<T>(other) {
-    // Remove duplicates
-    for (size_t i = 0; i < this->get_size(); ) {
-        if (this->find(this->pdata[i]) != i) {
-            this->delete_element(i);
-        } else {
-            i++;
-        }
-    }
-    this->sort();
-}
-
-template <typename T>
-MySet<T>::MySet(const T& initial_element) : MyVector<T>(1) {
-    this->add_element(initial_element);
-}
+MySet<T>::MySet(const MySet& other) : MyVector<T>(other) {}
 
 template <typename T>
 void MySet<T>::add_element(const T& element) {
     if (this->find(element) == -1) {
         MyVector<T>::add_element(element);
-        this->sort();
+        sort();
     }
 }
 
@@ -79,8 +62,8 @@ bool MySet<T>::is_element(const T& element) const {
 
 template <typename T>
 void MySet<T>::sort() {
-    for (size_t i = 0; i < this->get_size() - 1; ++i) {
-        for (size_t j = 0; j < this->get_size() - i - 1; ++j) {
+    for (size_t i = 0; i < this->size - 1; ++i) {
+        for (size_t j = 0; j < this->size - i - 1; ++j) {
             if (this->pdata[j] > this->pdata[j + 1]) {
                 T temp = this->pdata[j];
                 this->pdata[j] = this->pdata[j + 1];
@@ -93,7 +76,7 @@ void MySet<T>::sort() {
 template <typename T>
 int MySet<T>::q_find(const T& element) const {
     int left = 0;
-    int right = this->get_size() - 1;
+    int right = this->size - 1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
         if (this->pdata[mid] == element) {
@@ -111,7 +94,7 @@ int MySet<T>::q_find(const T& element) const {
 template <typename T>
 MySet<T> MySet<T>::operator+(const MySet<T>& other) const {
     MySet<T> result = *this;
-    for (size_t i = 0; i < other.get_size(); ++i) {
+    for (size_t i = 0; i < other.getSize(); ++i) {
         result.add_element(other[i]);
     }
     return result;
@@ -120,7 +103,7 @@ MySet<T> MySet<T>::operator+(const MySet<T>& other) const {
 template <typename T>
 MySet<T> MySet<T>::operator-(const MySet<T>& other) const {
     MySet<T> result;
-    for (size_t i = 0; i < this->get_size(); ++i) {
+    for (size_t i = 0; i < this->size; ++i) {
         if (!other.is_element(this->pdata[i])) {
             result.add_element(this->pdata[i]);
         }
@@ -131,7 +114,7 @@ MySet<T> MySet<T>::operator-(const MySet<T>& other) const {
 template <typename T>
 MySet<T> MySet<T>::operator*(const MySet<T>& other) const {
     MySet<T> result;
-    for (size_t i = 0; i < this->get_size(); ++i) {
+    for (size_t i = 0; i < this->size; ++i) {
         if (other.is_element(this->pdata[i])) {
             result.add_element(this->pdata[i]);
         }
@@ -140,27 +123,27 @@ MySet<T> MySet<T>::operator*(const MySet<T>& other) const {
 }
 
 template <typename T>
-MySet<T>& MySet<T>::operator+=(const MySet<T>& other) {
+MySet<T>& MySet<T>::operator+=(const MySet& other) {
     *this = *this + other;
     return *this;
 }
 
 template <typename T>
-MySet<T>& MySet<T>::operator-=(const MySet<T>& other) {
+MySet<T>& MySet<T>::operator-=(const MySet& other) {
     *this = *this - other;
     return *this;
 }
 
 template <typename T>
-MySet<T>& MySet<T>::operator*=(const MySet<T>& other) {
+MySet<T>& MySet<T>::operator*=(const MySet& other) {
     *this = *this * other;
     return *this;
 }
 
 template <typename T>
 bool MySet<T>::operator==(const MySet<T>& other) const {
-    if (this->get_size() != other.get_size()) return false;
-    for (size_t i = 0; i < this->get_size(); ++i) {
+    if (this->size != other.size) return false;
+    for (size_t i = 0; i < this->size; ++i) {
         if (this->pdata[i] != other.pdata[i]) {
             return false;
         }
@@ -170,19 +153,25 @@ bool MySet<T>::operator==(const MySet<T>& other) const {
 
 template<typename T>
 std::ostream& operator<<(std::ostream& os, const MySet<T>& set) {
-    for (size_t i = 0; i < set.get_size(); ++i) {
+    for (size_t i = 0; i < set.getSize(); ++i) {
         os << set[i] << " ";
     }
     return os;
 }
 
+template<class T>
+class MySet;
+
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const MySet<T>& set);
+
+
 template <>
 class MySet<const char*> : public MyVector<const char*> {
 public:
     MySet(size_t initial_size = 1);
-    MySet(const MyVector<const char*>& other);
+    MySet(const MySet& other);
     MySet(const char* initial_element);
-    ~MySet() = default;
 
     void add_element(const char* element);
     void delete_element(const char* element);
@@ -190,40 +179,31 @@ public:
     void sort();
     int q_find(const char* element) const;
 
-    MySet<const char*> operator+(const MySet<const char*>& other) const;
-    MySet<const char*> operator-(const MySet<const char*>& other) const;
-    MySet<const char*> operator*(const MySet<const char*>& other) const;
+    MySet operator+(const MySet& other) const;
+    MySet operator-(const MySet& other) const;
+    MySet operator*(const MySet& other) const;
 
-    MySet<const char*>& operator+=(const MySet<const char*>& other);
-    MySet<const char*>& operator-=(const MySet<const char*>& other);
-    MySet<const char*>& operator*=(const MySet<const char*>& other);
+    MySet& operator+=(const MySet& other);
+    MySet& operator-=(const MySet& other);
+    MySet& operator*=(const MySet& other);
 
-    bool operator==(const MySet<const char*>& other) const;
+    bool operator==(const MySet& other) const;
 
-    friend std::ostream& operator<< <>(std::ostream& os, const MySet<const char*>& set);
+    friend std::ostream& operator<< <>(std::ostream& os, const MySet& set);
 };
 
 MySet<const char*>::MySet(size_t initial_size) : MyVector<const char*>(initial_size) {}
-
-MySet<const char*>::MySet(const MyVector<const char*>& other) : MyVector<const char*>(other) {
-    for (size_t i = 0; i < this->get_size(); ) {
-        if (this->find(this->pdata[i]) != i) {
-            this->delete_element(this->pdata[i]);
-        } else {
-            i++;
-        }
-    }
-    this->sort();
-}
-
+    
+MySet<const char*>::MySet(const MySet& other) : MyVector<const char*>(other) {}
+    
 MySet<const char*>::MySet(const char* initial_element) : MyVector<const char*>(1) {
-    this->add_element(initial_element);
+    this->add_element(initial_element); 
 }
 
 void MySet<const char*>::add_element(const char* element) {
     if (this->find(element) == -1) {
         MyVector<const char*>::add_element(element);
-        this->sort();
+        sort();
     }
 }
 
@@ -239,8 +219,8 @@ bool MySet<const char*>::is_element(const char* element) const {
 }
 
 void MySet<const char*>::sort() {
-    for (size_t i = 0; i < this->get_size() - 1; ++i) {
-        for (size_t j = 0; j < this->get_size() - i - 1; ++j) {
+    for (size_t i = 0; i < this->size - 1; ++i) {
+        for (size_t j = 0; j < this->size - i - 1; ++j) {
             if (strcmp(this->pdata[j], this->pdata[j + 1]) > 0) {
                 const char* temp = this->pdata[j];
                 this->pdata[j] = this->pdata[j + 1];
@@ -252,7 +232,7 @@ void MySet<const char*>::sort() {
 
 int MySet<const char*>::q_find(const char* element) const {
     int left = 0;
-    int right = this->get_size() - 1;
+    int right = this->size - 1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
         int cmp = strcmp(this->pdata[mid], element);
@@ -268,17 +248,17 @@ int MySet<const char*>::q_find(const char* element) const {
     return -1;
 }
 
-MySet<const char*> MySet<const char*>::operator+(const MySet<const char*>& other) const {
-    MySet<const char*> result = *this;
-    for (size_t i = 0; i < other.get_size(); ++i) {
+MySet<const char*> MySet<const char*>::operator+(const MySet& other) const {
+    MySet result = *this;
+    for (size_t i = 0; i < other.getSize(); ++i) {
         result.add_element(other[i]);
     }
     return result;
 }
 
-MySet<const char*> MySet<const char*>::operator-(const MySet<const char*>& other) const {
-    MySet<const char*> result;
-    for (size_t i = 0; i < this->get_size(); ++i) {
+MySet<const char*> MySet<const char*>::operator-(const MySet& other) const {
+    MySet result;
+    for (size_t i = 0; i < this->size; ++i) {
         if (!other.is_element(this->pdata[i])) {
             result.add_element(this->pdata[i]);
         }
@@ -286,9 +266,9 @@ MySet<const char*> MySet<const char*>::operator-(const MySet<const char*>& other
     return result;
 }
 
-MySet<const char*> MySet<const char*>::operator*(const MySet<const char*>& other) const {
-    MySet<const char*> result;
-    for (size_t i = 0; i < this->get_size(); ++i) {
+MySet<const char*> MySet<const char*>::operator*(const MySet& other) const {
+    MySet result;
+    for (size_t i = 0; i < this->size; ++i) {
         if (other.is_element(this->pdata[i])) {
             result.add_element(this->pdata[i]);
         }
@@ -296,24 +276,9 @@ MySet<const char*> MySet<const char*>::operator*(const MySet<const char*>& other
     return result;
 }
 
-MySet<const char*>& MySet<const char*>::operator+=(const MySet<const char*>& other) {
-    *this = *this + other;
-    return *this;
-}
-
-MySet<const char*>& MySet<const char*>::operator-=(const MySet<const char*>& other) {
-    *this = *this - other;
-    return *this;
-}
-
-MySet<const char*>& MySet<const char*>::operator*=(const MySet<const char*>& other) {
-    *this = *this * other;
-    return *this;
-}
-
-bool MySet<const char*>::operator==(const MySet<const char*>& other) const {
-    if (this->get_size() != other.get_size()) return false;
-    for (size_t i = 0; i < this->get_size(); ++i) {
+bool MySet<const char*>::operator==(const MySet& other) const {
+    if (this->size != other.size) return false;
+    for (size_t i = 0; i < this->size; ++i) {
         if (strcmp(this->pdata[i], other.pdata[i]) != 0) {
             return false;
         }
@@ -322,7 +287,7 @@ bool MySet<const char*>::operator==(const MySet<const char*>& other) const {
 }
 
 std::ostream& operator<<(std::ostream& os, const MySet<const char*>& set) {
-    for (size_t i = 0; i < set.get_size(); ++i) {
+    for (size_t i = 0; i < set.getSize(); ++i) {
         os << set[i] << " ";
     }
     return os;

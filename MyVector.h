@@ -20,7 +20,6 @@ protected:
 public:
     MyVector(size_t initial_size = 1);
     MyVector(const MyVector& other);
-    MyVector(const T& initial_element);  // Added constructor for single element
     ~MyVector();
 
     void add_element(const T& element);
@@ -33,7 +32,7 @@ public:
 
     MyVector& operator=(const MyVector& other);
 
-    size_t get_size() const;  // Changed from getSize to get_size
+    size_t getSize() const;
 
     friend std::ostream& operator<< <>(std::ostream& os, const MyVector<T>& set);
 };
@@ -49,12 +48,6 @@ MyVector<T>::MyVector(const MyVector& other) : max_size(other.max_size), size(ot
     for (size_t i = 0; i < size; ++i) {
         pdata[i] = other.pdata[i];
     }
-}
-
-template <typename T>
-MyVector<T>::MyVector(const T& initial_element) : max_size(1), size(1) {
-    pdata = new T[max_size];
-    pdata[0] = initial_element;
 }
 
 template <typename T>
@@ -128,7 +121,7 @@ MyVector<T>& MyVector<T>::operator=(const MyVector<T>& other) {
 }
 
 template <typename T>
-size_t MyVector<T>::get_size() const {
+size_t MyVector<T>::getSize() const {
     return size;
 }
 
@@ -148,7 +141,7 @@ protected:
 public:
     MyVector(size_t initial_size = 1);
     MyVector(const MyVector& other);
-    MyVector(const char* initial_element);  // Constructor for single element
+    MyVector(const char* initial_element);
     ~MyVector();
 
     void add_element(const char* element);
@@ -161,7 +154,7 @@ public:
 
     MyVector& operator=(const MyVector& other);
 
-    size_t get_size() const;
+    size_t getSize() const;
 
     friend std::ostream& operator<<(std::ostream& os, const MyVector& vec);
 };
@@ -179,7 +172,8 @@ MyVector<const char*>::MyVector(const MyVector& other) : max_size(other.max_size
 
 MyVector<const char*>::MyVector(const char* initial_element) : max_size(1), size(1) {
     pdata = new const char*[max_size];
-    pdata[0] = initial_element;
+    pdata[0] = new char[strlen(initial_element) + 1];
+    strcpy(const_cast<char*>(pdata[0]), initial_element);
 }
 
 MyVector<const char*>::~MyVector() {
@@ -244,7 +238,7 @@ MyVector<const char*>& MyVector<const char*>::operator=(const MyVector& other) {
     return *this;
 }
 
-size_t MyVector<const char*>::get_size() const {
+size_t MyVector<const char*>::getSize() const {
     return size;
 }
 
