@@ -117,61 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PolynomialLib
+# Target rules for targets named lab7
 
 # Build rule for target.
-PolynomialLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PolynomialLib
-.PHONY : PolynomialLib
+lab7: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab7
+.PHONY : lab7
 
 # fast build rule for target.
-PolynomialLib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolynomialLib.dir/build.make CMakeFiles/PolynomialLib.dir/build
-.PHONY : PolynomialLib/fast
-
-#=============================================================================
-# Target rules for targets named lab6
-
-# Build rule for target.
-lab6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab6
-.PHONY : lab6
-
-# fast build rule for target.
-lab6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/build
-.PHONY : lab6/fast
-
-lib/PolynomialLib.o: lib/PolynomialLib.cpp.o
-.PHONY : lib/PolynomialLib.o
-
-# target to build an object file
-lib/PolynomialLib.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolynomialLib.dir/build.make CMakeFiles/PolynomialLib.dir/lib/PolynomialLib.cpp.o
-.PHONY : lib/PolynomialLib.cpp.o
-
-lib/PolynomialLib.i: lib/PolynomialLib.cpp.i
-.PHONY : lib/PolynomialLib.i
-
-# target to preprocess a source file
-lib/PolynomialLib.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolynomialLib.dir/build.make CMakeFiles/PolynomialLib.dir/lib/PolynomialLib.cpp.i
-.PHONY : lib/PolynomialLib.cpp.i
-
-lib/PolynomialLib.s: lib/PolynomialLib.cpp.s
-.PHONY : lib/PolynomialLib.s
-
-# target to generate assembly for a file
-lib/PolynomialLib.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolynomialLib.dir/build.make CMakeFiles/PolynomialLib.dir/lib/PolynomialLib.cpp.s
-.PHONY : lib/PolynomialLib.cpp.s
+lab7/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/build
+.PHONY : lab7/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -179,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -187,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -198,11 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... PolynomialLib"
-	@echo "... lab6"
-	@echo "... lib/PolynomialLib.o"
-	@echo "... lib/PolynomialLib.i"
-	@echo "... lib/PolynomialLib.s"
+	@echo "... lab7"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

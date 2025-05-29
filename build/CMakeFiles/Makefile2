@@ -63,8 +63,7 @@ CMAKE_BINARY_DIR = /home/exeiqq/Labs25/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/PolynomialLib.dir/all
-all: CMakeFiles/lab6.dir/all
+all: CMakeFiles/lab7.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,61 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/PolynomialLib.dir/clean
-clean: CMakeFiles/lab6.dir/clean
+clean: CMakeFiles/lab7.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/PolynomialLib.dir
+# Target rules for target CMakeFiles/lab7.dir
 
 # All Build rule for target.
-CMakeFiles/PolynomialLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolynomialLib.dir/build.make CMakeFiles/PolynomialLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolynomialLib.dir/build.make CMakeFiles/PolynomialLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=1,2 "Built target PolynomialLib"
-.PHONY : CMakeFiles/PolynomialLib.dir/all
+CMakeFiles/lab7.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=1,2 "Built target lab7"
+.PHONY : CMakeFiles/lab7.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PolynomialLib.dir/rule: cmake_check_build_system
+CMakeFiles/lab7.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PolynomialLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab7.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
-.PHONY : CMakeFiles/PolynomialLib.dir/rule
+.PHONY : CMakeFiles/lab7.dir/rule
 
 # Convenience name for target.
-PolynomialLib: CMakeFiles/PolynomialLib.dir/rule
-.PHONY : PolynomialLib
+lab7: CMakeFiles/lab7.dir/rule
+.PHONY : lab7
 
 # clean rule for target.
-CMakeFiles/PolynomialLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PolynomialLib.dir/build.make CMakeFiles/PolynomialLib.dir/clean
-.PHONY : CMakeFiles/PolynomialLib.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lab6.dir
-
-# All Build rule for target.
-CMakeFiles/lab6.dir/all: CMakeFiles/PolynomialLib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/exeiqq/Labs25/build/CMakeFiles --progress-num=3,4 "Built target lab6"
-.PHONY : CMakeFiles/lab6.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lab6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab6.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exeiqq/Labs25/build/CMakeFiles 0
-.PHONY : CMakeFiles/lab6.dir/rule
-
-# Convenience name for target.
-lab6: CMakeFiles/lab6.dir/rule
-.PHONY : lab6
-
-# clean rule for target.
-CMakeFiles/lab6.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/clean
-.PHONY : CMakeFiles/lab6.dir/clean
+CMakeFiles/lab7.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/clean
+.PHONY : CMakeFiles/lab7.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

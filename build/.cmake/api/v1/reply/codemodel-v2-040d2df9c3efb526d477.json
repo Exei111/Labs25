@@ -9,14 +9,13 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.23"
+						"string" : "3.10"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -28,11 +27,10 @@
 					[
 						0
 					],
-					"name" : "lab6",
+					"name" : "DocumentLab",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -40,16 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "PolynomialLib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PolynomialLib-Debug-6822d2565329786e17f5.json",
-					"name" : "PolynomialLib",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "lab6::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab6-Debug-5083c0f1dd1dd40e58b9.json",
-					"name" : "lab6",
+					"id" : "lab7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab7-Debug-cda8c914e33e104b9f06.json",
+					"name" : "lab7",
 					"projectIndex" : 0
 				}
 			]

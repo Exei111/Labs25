@@ -1,10 +1,16 @@
-cmake_minimum_required(VERSION 3.23)
-project(lab6)
+cmake_minimum_required(VERSION 3.10)
+
+project(DocumentLab)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_library(PolynomialLib STATIC lib/Term.h lib/Polynomial.h lib/MyVector.h lib/PolynomialLib.cpp)
+set(SOURCES
+    main.cpp
+    Document.h
+    Receipt.h
+    Invoice.h
+    Check.h
+)
 
-add_executable(lab6 main.cpp)
-
-target_link_libraries(lab6 PRIVATE PolynomialLib)
+add_executable(lab7 ${SOURCES})

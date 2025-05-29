@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -283,10 +283,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -859,7 +859,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "lab6"
+			"value" : "DocumentLab"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1158,19 +1158,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "linker supports push/pop state"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "TRUE"
-		},
-		{
-			"name" : "lab6_BINARY_DIR",
+			"name" : "DocumentLab_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1182,7 +1170,7 @@
 			"value" : "/home/exeiqq/Labs25/build"
 		},
 		{
-			"name" : "lab6_IS_TOP_LEVEL",
+			"name" : "DocumentLab_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1194,7 +1182,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "lab6_SOURCE_DIR",
+			"name" : "DocumentLab_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1204,6 +1192,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/exeiqq/Labs25"
+		},
+		{
+			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
 		}
 	],
 	"kind" : "cache",
