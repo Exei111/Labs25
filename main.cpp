@@ -128,7 +128,6 @@ void addDocument(MyStack<Document*>& stack) {
 int main() {
     MyStack<Document*> stack;
 
-    // Добавляем примеры документов
     stack.push(new Receipt("Оплата за электричество", 2543.75, 
                           "2023-11-20", "Петров А.А.", "За ноябрь 2023"));
     stack.push(new Invoice("Поставка мебели", 120500.00, 
