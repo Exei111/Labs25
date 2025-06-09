@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/exeiqq/Labs25/build/mymathnew/cmake_install.cmake")
+  include("/home/exeiqq/Labs25/build/planets/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/exeiqq/Labs25/build/mymath/cmake_install.cmake")
+  include("/home/exeiqq/Labs25/build/products/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

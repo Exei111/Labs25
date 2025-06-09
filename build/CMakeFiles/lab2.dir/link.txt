@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/lab2.dir/main.cpp.o -o lab2  planets/libplanets.a products/libproducts.a

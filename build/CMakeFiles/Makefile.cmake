@@ -11,8 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.30.8/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.8/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.8/CMakeSystem.cmake"
-  "/home/exeiqq/Labs25/mymath/CMakeLists.txt"
-  "/home/exeiqq/Labs25/mymathnew/CMakeLists.txt"
+  "/home/exeiqq/Labs25/database.txt"
+  "/home/exeiqq/Labs25/database2.txt"
+  "/home/exeiqq/Labs25/planets/CMakeLists.txt"
+  "/home/exeiqq/Labs25/products/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
@@ -123,14 +125,16 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.30.8/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.8/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.8/CMakeCXXCompiler.cmake"
+  "database.txt"
+  "database2.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "mymathnew/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "mymath/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "planets/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "products/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lab1.dir/DependInfo.cmake"
-  "mymathnew/CMakeFiles/mymathnew.dir/DependInfo.cmake"
-  "mymath/CMakeFiles/mymath.dir/DependInfo.cmake"
+  "CMakeFiles/lab2.dir/DependInfo.cmake"
+  "planets/CMakeFiles/planets.dir/DependInfo.cmake"
+  "products/CMakeFiles/products.dir/DependInfo.cmake"
   )

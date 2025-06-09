@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmymathnew.a CMakeFiles/mymathnew.dir/mymathnew.cpp.o
-/usr/bin/ranlib libmymathnew.a
