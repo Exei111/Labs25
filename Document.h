@@ -6,8 +6,8 @@
 
 class Document {
 protected:
-    char* title; 
-    double amount;   
+    char* title;
+    double amount;
 
 public:
     Document(const char* title, double amount);
@@ -20,12 +20,10 @@ public:
 Document::Document(const char* title, double amount) : amount(amount) {
     this->title = new char[strlen(title) + 1];
     strcpy(this->title, title);
-    std::cout << "Document()" << std::endl;
 }
 
 Document::~Document() {
     delete[] title;
-    std::cout << "~Document()" << std::endl;
 }
 
 const char* Document::getTitle() const {

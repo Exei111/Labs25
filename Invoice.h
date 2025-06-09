@@ -5,32 +5,40 @@
 
 class Invoice : public Document {
 private:
-    char number[50];
-    char sender[100];
+    char invoiceNumber[20];
+    char fromCompany[100];
+    char toCompany[100];
+    char goodsDescription[200];
 
 public:
-    Invoice(const char* title, double amount, const char* number, const char* sender);
-    ~Invoice();
+    Invoice(const char* title, double amount, 
+            const char* invoiceNumber, const char* fromCompany, 
+            const char* toCompany, const char* goodsDescription);
     void show() const override;
 };
 
-Invoice::Invoice(const char* title, double amount, const char* number, const char* sender)
+Invoice::Invoice(const char* title, double amount, 
+                 const char* invoiceNumber, const char* fromCompany,
+                 const char* toCompany, const char* goodsDescription)
     : Document(title, amount) {
-    strncpy(this->number, number, sizeof(this->number) - 1);
-    this->number[sizeof(this->number) - 1] = '\0';
-    strncpy(this->sender, sender, sizeof(this->sender) - 1);
-    this->sender[sizeof(this->sender) - 1] = '\0';
-    std::cout << "Invoice()" << std::endl;
-}
-
-Invoice::~Invoice() {
-    std::cout << "~Invoice()" << std::endl;
+    strncpy(this->invoiceNumber, invoiceNumber, sizeof(this->invoiceNumber) - 1);
+    this->invoiceNumber[sizeof(this->invoiceNumber) - 1] = '\0';
+    strncpy(this->fromCompany, fromCompany, sizeof(this->fromCompany) - 1);
+    this->fromCompany[sizeof(this->fromCompany) - 1] = '\0';
+    strncpy(this->toCompany, toCompany, sizeof(this->toCompany) - 1);
+    this->toCompany[sizeof(this->toCompany) - 1] = '\0';
+    strncpy(this->goodsDescription, goodsDescription, sizeof(this->goodsDescription) - 1);
+    this->goodsDescription[sizeof(this->goodsDescription) - 1] = '\0';
 }
 
 void Invoice::show() const {
-    std::cout << "Накладная: " << getTitle() << ", Сумма: " << getAmount()
-              << ", Номер: " << number
-              << ", Отправитель: " << sender << std::endl;
+    std::cout << "НАКЛАДНАЯ\n"
+              << "Номер: " << invoiceNumber << "\n"
+              << "От: " << fromCompany << "\n"
+              << "Кому: " << toCompany << "\n"
+              << "Товары: " << goodsDescription << "\n"
+              << "Сумма: " << getAmount() << "\n"
+              << "----------------------------------------\n";
 }
 
 #endif // INVOICE_H

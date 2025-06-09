@@ -5,32 +5,35 @@
 
 class Receipt : public Document {
 private:
-    char date[20];
-    char recipient[100];
+    char paymentDate[20];
+    char payer[100];
+    char paymentPurpose[200];
 
 public:
-    Receipt(const char* title, double amount, const char* date, const char* recipient);
-    ~Receipt();
+    Receipt(const char* title, double amount, 
+            const char* paymentDate, const char* payer, const char* paymentPurpose);
     void show() const override;
 };
 
-Receipt::Receipt(const char* title, double amount, const char* date, const char* recipient)
+Receipt::Receipt(const char* title, double amount, 
+                 const char* paymentDate, const char* payer, const char* paymentPurpose)
     : Document(title, amount) {
-    strncpy(this->date, date, sizeof(this->date) - 1);
-    this->date[sizeof(this->date) - 1] = '\0';
-    strncpy(this->recipient, recipient, sizeof(this->recipient) - 1);
-    this->recipient[sizeof(this->recipient) - 1] = '\0';
-    std::cout << "Receipt()" << std::endl;
-}
-
-Receipt::~Receipt() {
-    std::cout << "~Receipt()" << std::endl;
+    strncpy(this->paymentDate, paymentDate, sizeof(this->paymentDate) - 1);
+    this->paymentDate[sizeof(this->paymentDate) - 1] = '\0';
+    strncpy(this->payer, payer, sizeof(this->payer) - 1);
+    this->payer[sizeof(this->payer) - 1] = '\0';
+    strncpy(this->paymentPurpose, paymentPurpose, sizeof(this->paymentPurpose) - 1);
+    this->paymentPurpose[sizeof(this->paymentPurpose) - 1] = '\0';
 }
 
 void Receipt::show() const {
-    std::cout << "Квитанция: " << getTitle() << ", Сумма: " << getAmount()
-              << ", Дата: " << date
-              << ", Получатель: " << recipient << std::endl;
+    std::cout << "КВИТАНЦИЯ\n"
+              << "Название: " << getTitle() << "\n"
+              << "Сумма: " << getAmount() << "\n"
+              << "Дата оплаты: " << paymentDate << "\n"
+              << "Плательщик: " << payer << "\n"
+              << "Цель платежа: " << paymentPurpose << "\n"
+              << "----------------------------------------\n";
 }
 
 #endif // RECEIPT_H

@@ -150,6 +150,7 @@ CMakeFiles/lab7.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
   /usr/include/c++/14/iosfwd \
   /usr/include/c++/14/iostream \
   /usr/include/c++/14/istream \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/new \
   /usr/include/c++/14/ostream \
   /usr/include/c++/14/pstl/pstl_config.h \
@@ -244,6 +245,8 @@ CMakeFiles/lab7.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
 /usr/include/c++/14/string:
 
 /usr/include/c++/14/new:
+
+/usr/include/c++/14/limits:
 
 /usr/include/stdlib.h:
 

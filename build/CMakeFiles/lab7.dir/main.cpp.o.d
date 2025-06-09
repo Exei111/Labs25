@@ -130,4 +130,5 @@ CMakeFiles/lab7.dir/main.cpp.o: /home/exeiqq/Labs25/main.cpp \
  /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /home/exeiqq/Labs25/Receipt.h /home/exeiqq/Labs25/Invoice.h \
- /home/exeiqq/Labs25/Check.h /home/exeiqq/Labs25/MyStack.h
+ /home/exeiqq/Labs25/Check.h /home/exeiqq/Labs25/MyStack.h \
+ /usr/include/c++/14/limits
